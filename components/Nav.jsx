@@ -7,6 +7,7 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
 const { data: session } = useSession();
+console.log(useSession(), { data: session } ,  'data');
 
   const [providers, setProviders] = useState(null);
   const [toggelDropdown, setToggelDropdown] = useState(false);
